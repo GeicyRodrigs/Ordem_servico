@@ -204,7 +204,7 @@ small, .small {
 
 mark, .mark {
   padding: 0.2em;
-  background-color: #fcf8e3;
+  background-color: #3b3306;
 }
 
 sub,
@@ -224,11 +224,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #072757;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #072757;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
