@@ -199,6 +199,7 @@ strong {
 
 small, .small {
   font-size: 0.875em;
+  position: relative;
 }
 
 mark, .mark {
@@ -2454,10 +2455,11 @@ textarea.form-control-lg {
   width: 1em;
   height: 1em;
   margin-top: 0.25em;
+  position: relative;
   vertical-align: top;
   background-color: #fff;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: contain;
   border: 1px solid rgba(0, 0, 0, 0.25);
   -webkit-appearance: none;
@@ -3024,6 +3026,7 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #0d6efd;
   border-color: #0d6efd;
+  position: relative;
 }
 .btn-primary:hover {
   color: #fff;
@@ -4556,7 +4559,7 @@ textarea.form-control-lg {
 }
 
 .card-header {
-  position: center;
+  position: relative;
   margin-bottom: 0;
 
 }
@@ -7353,6 +7356,7 @@ textarea.form-control-lg {
 
 .mb-3 {
   margin-bottom: 1rem !important;
+  position:relative;
 }
 
 .mb-4 {
@@ -7754,8 +7758,9 @@ textarea.form-control-lg {
 }
 
 .text-muted {
-  --bs-text-opacity: 1;
-  color: #6c757d !important;
+  --bs-text-opacity: 3;
+  color: #030303 !important;
+  position: relative;
 }
 
 .text-black-50 {
@@ -11667,9 +11672,18 @@ body {
 
 .img-fundo {
   position: absolute;
-  height: 150vh;
+  height: 100vh;
   width: 100vw;
-  background-image: url('assets/img/degrade.jpg');
+  background-image: url('assets/img/istockphoto-1088991646-170667a.jpg');
+  background-size: cover;
+  
+}
+
+.img-logo {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('');
   background-size: cover;
   
 }
