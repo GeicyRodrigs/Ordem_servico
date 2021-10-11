@@ -4,7 +4,7 @@ class estoque extends BaseController {
     
     public function index()
     {
-        echo "<h1>Produtos e Serviços</h1>";
+        return view('estoque_index');
     }
 
     public function detalhes ($estoque_id)
