@@ -4,8 +4,8 @@ use CodeIgniter\Model;
 
 class clientesModel extends Model {
     protected $table = 'clientes';
-    protected $primaryKey = 'id_cli';
-    protected $allowedFields = [''];
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['nomeproduto'];
     protected $returnType = 'object';
 }
 
