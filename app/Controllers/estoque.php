@@ -1,14 +1,16 @@
 <?php namespace App\Controllers;
 
-class estoque extends BaseController {
+class Estoque extends BaseController {
     
     public function index()
     {
-        return view('estoque_index');
+       
     }
 
-    public function detalhes ($estoque_id)
+    public function teste()
     {
-        echo "<h1> Exibindo detalhes do produto $estoque_id </h1>";
-    }
+       $data['titulo'] = 'Inserir nova categoria';
+       $data['acao'] = 'Inserir';
+       echo View('estoque_form', $data);
+}
 }
