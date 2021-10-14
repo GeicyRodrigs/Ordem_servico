@@ -7,7 +7,7 @@ class Estoque extends BaseController {
        
     }
 
-    public function teste()
+    public function inserir()
     {
        $data['titulo'] = 'Inserir nova categoria';
        $data['acao'] = 'Inserir';
