@@ -23,7 +23,7 @@
     <div class="row">
             <div class="col s12 m6 push-m3"> <!--Centralizando na página-->
             <h3 class="light">Novo Cliente</h3>
-            <form  action="<?php echo base_url("estoque/inserir") ?>" method="POST">
+            <form  action="<?php echo base_url("Home/inserircli") ?>" method="POST">
               <div class="input-field col s12">
                 <input type="number" name="codigo" id="codigo">
                 <label for="nome">Codigo</label>
@@ -45,8 +45,8 @@
                 <label for="nome">Endereco</label>
             </div>
             <div class="input-field col s12">
-                <input type="number" name="nº" id="nº">
-                <label for="nome">N</label>
+                <input type="number" name="num" id="num">
+                <label for="nome">Nº</label>
             </div>
             <div class="input-field col s12">
               <input type="text" name="bairro" id="bairro">
@@ -61,7 +61,8 @@
                 <label for="nome">Email</label>
             </div>
             
-            <a href="clientes.html" class="btn green">Gravar</a>
+            <!--<a href="clientes.html" class="btn green">Gravar</a>-->
+            <button type="submit">Gravar</button>
         </form>
     </div>
 </div>

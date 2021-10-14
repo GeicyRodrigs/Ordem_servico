@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://sistemaos.local/';
+    public $baseURL = 'http://sistemaos.local/public';
 
     /**
      * --------------------------------------------------------------------------
