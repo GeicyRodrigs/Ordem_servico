@@ -1,35 +1,38 @@
 <?php namespace App\Controllers;
 
-use App\Models\EstoqueModel;
-
-class Estoque extends BaseController {
+class estoque extends BaseController {
     
-    public function index()
-    {
-        //return view('index');
-        return view('teste.php');
+    public function servprod(){
+        return view('servprod.php');
     }
 
-    public function inserir()
-    {
-       $data['titulo'] = 'Inserir nova categoria';
-       $data['acao'] = 'Inserir';
+    public function cadastroestoque(){
+        return view('cadastroestoque.php');
+    }
 
-       $codigo = $this->request->getPost('codigo');
-       
-      
-
-       $dados = [
-        'codigo' => $codigo,
-        'cpf' => $cpf,
-        
-       ];
-
-       $usuarioModel = new \App\Models\EstoqueModel(); 
-	    $usuarioModel->insert($dados);
-       echo $codigo;
+    public function inserirestoque(){
+    
+        $nomeproduto = $this->request->getPost('nomeproduto');
+        $quantidade = $this->request->getPost('quantidade');
+        $unidade = $this->request->getPost('unidade');
+        $precocusto = $this->request->getPost('precocusto');
+        $lucro = $this->request->getPost('lucro');
+        $precovenda = $this->request->getPost('precovenda');
 
 
-      // echo View('estoque_form', $data);
-}
-}
+        $dadosestoque= [
+        'nomeproduto' => $nomeproduto,
+        'quantidade' => $quantidade,
+        'unidade' => $unidade,
+        'precocusto' => $precocusto,
+        'lucro' => $lucro,
+        'precovenda' => $precovenda,
+         
+        ];
+    
+
+       $estoqueModel = new \App\Models\EstoqueModel(); 
+	   $estoqueModel->insert($dadosestoque);
+       return view('servprod.php');
+        }
+    }

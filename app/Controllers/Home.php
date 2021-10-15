@@ -1,7 +1,7 @@
 <?php namespace App\Controllers;
 
-class Home extends BaseController
-{
+class Home extends BaseController{
+
     public function index()
     {
         return view('index.php');
@@ -10,12 +10,21 @@ class Home extends BaseController
         return view('teste.php');
     }
    
-    public function cliente(){
+    public function clientes(){
         return view('clientes.php');
     }
     public function cadastrocliente(){
         return view('cadastrocli.php');
     }
+
+    public function contato(){
+        return view('contato.php');
+    }
+
+    public function servprod(){
+        return view('servprod.php');
+    }
+    
 
     public function inserircli()
     {
@@ -30,11 +39,11 @@ class Home extends BaseController
         $telefone = $this->request->getPost('telefone');
         $email = $this->request->getPost('email');
 
-        $dados = [
-         'id_cli' => $codigo,
-         'Nome' => $nome,
-         'CPF/CNPJ' => $cpf_cnpj,
-         'CEP' => $cep,
+        $dadoscli = [
+        'id_cli' => $codigo,
+        'Nome' => $nome,
+        'CPF/CNPJ' => $cpf_cnpj,
+        'CEP' => $cep,
         'Endereço' => $endereco,
         'Num' => $num,
         'Bairro' => $bairro,
@@ -55,13 +64,18 @@ class Home extends BaseController
 
         */
 
+  
         
  
-        $usuarioModel = new \App\Models\clientesModel(); 
-         $usuarioModel->insert($dados);
-        //echo $codigo;
+        $clienteModel = new \App\Models\clientesModel(); 
+        $clienteModel->insert($dadoscli);
+    
         return view('clientes.php');
 
+
+
     }
+
+
     
 }

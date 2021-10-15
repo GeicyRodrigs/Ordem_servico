@@ -44,7 +44,7 @@ echo $this->include('includes/style');
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Inicio</div>
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="<?php echo base_url("home/index") ?>">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Ordem de Serviço
                             </a>
@@ -75,18 +75,18 @@ echo $this->include('includes/style');
                                 </nav>
                             </div>
 
-                            <a class="nav-link" href="serv&produt.html">
+                            <a class="nav-link" href="<?php echo base_url("home/servprod") ?>">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Serviços/Produtos
                             </a>
                 
-                            <a class="nav-link" href="clientes.html">
+                            <a class="nav-link" href="<?php echo base_url("home/clientes") ?>">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Clientes
                             </a>
                             
                             <div class="sb-sidenav-menu-heading">Contato</div>
-                            <a class="nav-link" href="contato.html">
+                            <a class="nav-link" href="<?php echo base_url("home/contato") ?>">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Fale Conosco
                             </a>
@@ -102,12 +102,15 @@ echo $this->include('includes/style');
                 <main>
                     <div class="container-fluid px-4">
                         <h1 class="mt-4"></h1>
-                      
-                            <li class="breadcrumb-item"><a href="<?php echo base_url("home/cadastrocliente") ?>">Novo Cliente</a></li>
+                        <h1 class="mt-4">Clientes</h1>
+                        <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a href="<?php echo base_url("home/cadastrocliente") ?>">Novo Cliente</a></li>
                         </ol>
                         
                 
             </div>
+
+        
 
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

@@ -47,7 +47,7 @@ echo $this->include('includes/style');
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Inicio</div>
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="<?php echo base_url("home/index") ?>">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Ordem de Serviço
                             </a>
@@ -78,18 +78,18 @@ echo $this->include('includes/style');
                                 </nav>
                             </div>
 
-                            <a class="nav-link" href="<?php echo base_url("home/teste") ?>" >
+                            <a class="nav-link" href="<?php echo base_url("home/servprod") ?>" >
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Serviços/Produtos
                             </a>
                 
-                            <a class="nav-link" href="<?php echo base_url("home/cliente") ?>">
+                            <a class="nav-link" href="<?php echo base_url("home/clientes") ?>">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Clientes
                             </a>
                             
                             <div class="sb-sidenav-menu-heading">Contato</div>
-                            <a class="nav-link" href="contato.html">
+                            <a class="nav-link" href="<?php echo base_url("home/contato") ?>">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Fale Conosco
                             </a>

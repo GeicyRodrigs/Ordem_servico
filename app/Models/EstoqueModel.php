@@ -9,4 +9,4 @@ class EstoqueModel extends Model {
     protected $returnType = 'object';//array
 }
 
-?>
+?> 
