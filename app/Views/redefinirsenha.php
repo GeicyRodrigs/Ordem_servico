@@ -1,3 +1,7 @@
+<?php
+
+echo $this->include('includes/style');
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,7 +15,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body class="bg-primary">
-        <img class="mb-5 img-fundo" src="assets/img/istockphoto-1088991646-170667a.jpg" />
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
@@ -28,8 +31,8 @@
                                                 <label for="inputEmail">Email</label>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="small" href="login.html">Voltar</a>
-                                                <a class="btn btn-primary" href="login.html">Redefinir Senha</a>
+                                                <a class="small" href="<?php echo base_url("home/login")?>">Voltar</a>
+                                                <a class="btn btn-primary" href="<?php echo base_url("home/login")?>">Redefinir Senha</a>
                                             </div>
                                         </form>
                                     </div>
@@ -43,11 +46,11 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                            <div class="text-muted"> ; </div>
                             <div>
-                                <a href="#">Privacy Policy</a>
+                                <a href="#"></a>
                                 &middot;
-                                <a href="#">Terms &amp; Conditions</a>
+                                <a href="#"> &amp; </a>
                             </div>
                         </div>
                     </div>

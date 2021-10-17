@@ -15,6 +15,7 @@ echo $this->include('includes/style');
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
 
+
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -85,12 +86,6 @@ echo $this->include('includes/style');
                                 Clientes
                             </a>
                             
-                            <div class="sb-sidenav-menu-heading">Contato</div>
-                            <a class="nav-link" href="<?php echo base_url("home/contato") ?>">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Fale Conosco
-                            </a>
-                        </div>
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logado como:</div>
@@ -106,10 +101,39 @@ echo $this->include('includes/style');
                         <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item"><a href="<?php echo base_url("home/cadastrocliente") ?>">Novo Cliente</a></li>
                         </ol>
-                        
+            
+            <table class="tabela">
+                <tr>
+                    <td>Codigo</td>
+                    <td>Nome</td>
+                    <td>CPFCNPJ</td>
+                    <td>CEP</td>
+                    <td>Endereço</td>
+                    <td>Nº</td>
+                    <td>Bairro</td>
+                    <td>Telefone</td>
+                    <td>Email</td>
+                </tr>
+            <?php foreach ($clientes as $cliente): ?>
+                <tr>
+                    <td><?php echo $cliente->id_cli; ?></td>
+                    <td><?php echo $cliente->Nome; ?></td>
+                    <td><?php echo $cliente->CPFCNPJ; ?></td>
+                    <td><?php echo $cliente->CEP; ?></td>
+                    <td><?php echo $cliente->Endereço; ?></td>
+                    <td><?php echo $cliente->Num; ?></td>
+                    <td><?php echo $cliente->Bairro; ?></td>
+                    <td><?php echo $cliente->Telefone; ?></td>
+                    <td><?php echo $cliente->Email; ?></td>
+
+                </tr>
+                <?php endforeach?>
+            </table>
                 
             </div>
-
+            
+           
+            
         
 
         </div>

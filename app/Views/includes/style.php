@@ -11698,9 +11698,47 @@ body {
   
 }
 
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
 
+div.gallery:hover {
+  border: 1px solid #777;
+}
 
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
 
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 
+.tabela {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
+.tabela td, .tabela th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tabela tr:nth-child(even){background-color: #f2f2f2;}
+
+.tabela tr:hover {background-color: #ddd;}
+
+.tabela th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
 </style>

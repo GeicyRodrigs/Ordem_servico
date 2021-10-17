@@ -29,8 +29,8 @@
                   <label for="nome">Nome Completo</label>
              </div>
                 <div class="input-field col s12">
-                 <input type="text" name="cpf_cnpj" id="cpf_cnpj">
-                    <label for="cpf/cnpj">CPF/CNPJ</label>
+                 <input type="text" name="cpfcnpj" id="cpfcnpj">
+                    <label for="cpfcnpj">CPFCNPJ</label>
                 </div>
                 <div class="input-field col s12">
                     <input type="number" name="CEP" id="CEP">
@@ -57,8 +57,7 @@
                 <label for="nome">Email</label>
             </div>
             
-            <!--<a href="clientes.html" class="btn green">Gravar</a>-->
-            <button type="submit">Gravar</button>
+            <button class="btn blue" type="submit">Gravar</button>
 
             
         </form>

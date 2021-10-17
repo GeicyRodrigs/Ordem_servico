@@ -7,8 +7,16 @@ class estoque extends BaseController {
     }
 
     public function cadastroestoque(){
-        return view('cadastroestoque.php');
+        //return view('cadastroestoque.php');
+        $estoqueModel = new \App\Models\estoqueModel();
+        $data['estoque'] = $estoqueModel->find();
     }
+
+    public function cadastroos(){
+        return view('cadastroos.php');
+    }
+
+
 
     public function inserirestoque(){
     

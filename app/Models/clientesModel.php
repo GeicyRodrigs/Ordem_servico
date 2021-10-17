@@ -5,8 +5,9 @@ use CodeIgniter\Model;
 class clientesModel extends Model {
     protected $table = 'clientes';
     protected $primaryKey = 'id_cli';
-    protected $allowedFields = ['Nome', 'CPF/CNPJ' ,'CEP' ,'Endereço' ,'Nº','Bairro', 'Telefone', 'Email'];
-    protected $returnType = 'object';//array
+    protected $allowedFields = ['Nome', 'CPFCNPJ' ,'CEP' ,'Endereço' ,'Num','Bairro', 'Telefone', 'Email'];
+    protected $returnType = 'object';
+
 }
 
 ?>

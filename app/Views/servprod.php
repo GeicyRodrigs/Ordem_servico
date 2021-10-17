@@ -82,12 +82,6 @@ echo $this->include('includes/style');
                                 Clientes
                             </a>
                             
-                            <div class="sb-sidenav-menu-heading">Contato</div>
-                            <a class="nav-link" href="<?php echo base_url("home/contato") ?>">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Fale Conosco
-                            </a>
-                        </div>
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logado como:</div>
@@ -104,23 +98,9 @@ echo $this->include('includes/style');
                             
                         </ol>
                        
-
+                    
                        
 
-                        <div style="height: 100vh"></div>
-                        <div class="card mb-4"><div class="card-body"></div></div>
-                    </div>
-                </main>
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted"> &copy; 2021</div>
-                            <div>
-                                <a href="#">Politica de Privacidade</a>
-                                &middot;
-                                <a href="#">Termos &amp; Condições</a>
-                            </div>
-                        </div>
                     </div>
                 </footer>
             </div>

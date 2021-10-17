@@ -20,35 +20,31 @@
     
     <div class="row">
             <div class="col s12 m6 push-m3"> <!--Centralizando na página-->
-            <h3 class="light">Novo produto</h3>
-            <form  action="<?php echo base_url("estoque/inserirestoque") ?>" method="POST">
+            <h3 class="light">Nova ordem de serviço</h3>
+            <form  action="<?php echo base_url("os/inseriros") ?>" method="POST">
              <div class="input-field col s12">
-                    <input type="text" name="nomeproduto" id="nomeproduto">
-                  <label for="nomeproduto">Produto / Serviço</label>
+                    <input type="text" name="funcionario" id="funcionario">
+                  <label for="funcionario">Funcionario</label>
              </div>
                 <div class="input-field col s12">
-                 <input type="number" name="quantidade" id="quantidade">
-                    <label for="quantidade">Quantidade</label>
+                 <input type="text" name="cliente" id="cliente">
+                    <label for="cliente">Cliente</label>
                 </div>
                 <div class="input-field col s12">
-                    <input type="text" name="unidade" id="unidade">
-                 <label for="unidade">Unidade</label>
+                    <input type="text" name="objeto" id="objeto">
+                 <label for="objeto">Objeto</label>
               </div>
                 <div class="input-field col s12">
-                <input type="number" name="precocusto" id="precocusto">
-                <label for="precocusto">Preço de custo</label>
+                <input type="text" name="solicita" id="solicita">
+                <label for="solicita">Solicitação</label>
             </div>
             <div class="input-field col s12">
-                <input type="number" name="lucro" id="lucro">
-                <label for="lucro">Lucro</label>
+                <input type="text" name="produtoservico" id="produtoservico">
+                <label for="produtoservico">Produto e Serviços</label>
             </div>
-            <div class="input-field col s12">
-              <input type="number" name="precovenda" id=precovenda">
-              <label for="precovenda">Preço de venda</label>
-          </div>
-            
-            <!--<a href="clientes.html" class="btn green">Gravar</a>-->
-            <button type="submit">Gravar</button>
+
+            <!--<a href="clientes.html" >Gravar</a>-->
+            <button class="btn blue" type="submit">Gravar</button>
 
             
         </form>

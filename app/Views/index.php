@@ -17,18 +17,14 @@ echo $this->include('includes/style');
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">O.S</a>
-            <!-- Sidebar Toggle-->
+            <a class="navbar-brand ps-3" href="<?php echo base_url("home/index")?>">O.S</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-            <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <div class="input-group">
                     <input class="form-control" type="text" placeholder="Procurar..." aria-label="Procurar..." aria-describedby="btnNavbarSearch" />
                     <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
                 </div>
             </form>
-            <!-- Navbar-->
             <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
@@ -36,7 +32,7 @@ echo $this->include('includes/style');
                         <li><a class="dropdown-item" href="#!">Configurações</a></li>
                         <li><a class="dropdown-item" href="#!">Relatórios</a></li>
                         <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#!">Sair</a></li>
+                        <li><a class="dropdown-item" href="<?php echo base_url("Home/login") ?>">Sair</a></li>
                     </ul>
                 </li>
             </ul>
@@ -88,12 +84,8 @@ echo $this->include('includes/style');
                                 Clientes
                             </a>
                             
-                            <div class="sb-sidenav-menu-heading">Contato</div>
-                            <a class="nav-link" href="<?php echo base_url("home/contato") ?>">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Fale Conosco
-                            </a>
-                        </div>
+                            
+                        
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logado como:</div>
@@ -107,6 +99,7 @@ echo $this->include('includes/style');
                         <h1 class="mt-4">Ordem de Serviço</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Sistema de Gerenciamento</li>
+                            <li class="breadcrumb-item"><a href="<?php echo base_url("home/cadastroos") ?>">Nova Ordem</a></li>
                         </ol>
                         <div class="row">
                             <div class="col-xl-3 col-md-6">
@@ -129,7 +122,7 @@ echo $this->include('includes/style');
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-success text-white mb-4">
-                                    <div class="card-body">Canceladas</div>
+                                    <div class="card-body">Finalizadas</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">Ver mais</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -138,15 +131,16 @@ echo $this->include('includes/style');
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-danger text-white mb-4">
-                                    <div class="card-body">Finalizadas</div>
+                                    <div class="card-body">Canceladas</div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <a class="small text-white stretched-link" href="#">Ver Mais</a>
                                         <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
                             </div>
+
+
                         </div>
-                        
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
